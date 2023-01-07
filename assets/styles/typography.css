@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Inika-Regular";
+    src: url(/assets/fonts/Inika/Inika-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inika-Bold";
+    src: url(/assets/fonts/Inika/Inika-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter-Regular";
+    src: url(/assets/fonts/Inter/Inter-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter-Bold";
+    src: url(/assets/fonts/Inter/Inter-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --green: #499A18;
+    --orange: #E06733;
+    --light-gray: #717171;
+    --gray: #636060;
+    --bg-section: #EDF2EC;
+    --Links-nav: #010201;
+    --black: #000;
+    --white: #fff;
+}
+
+.btn {
+    width: 158px;
+    height: 44px;
+    border: 2px solid var(--orange);
+
+    font-family: "Inter-Regular", sans-serif;
+    font-weight: normal;
+    font-size: 1.6em;
+    color: var(--black);
+
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
