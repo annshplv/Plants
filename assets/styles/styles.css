@@ -69,7 +69,7 @@ html {
     gap: 1px;
 }
 .logo {
-    background-image: url(/assets/icons/logo_vector.svg);
+    background-image: url(./icons/logo_vector.svg);
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
@@ -104,7 +104,7 @@ html {
 }
 
 .welcome__img {
-    background-image: url(/assets/imgs/welcome_leafs.png);
+    background-image: url(./imgs/welcome_leafs.png);
     background-repeat: no-repeat;
     
     width: 449px;
