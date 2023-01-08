@@ -29,6 +29,9 @@
 .accent-green {
     color: var(--green);
 }
+.accent-orange {
+    color: var(--orange);
+}
 
 h1 {
     font-family: "Inter-Bold";
@@ -36,6 +39,16 @@ h1 {
     line-height: 50px;
 
     color: var(--light-gray);
+}
+
+h2 {
+    font-family: "Inika-Regular";
+    font-size: 40px;
+    line-height: 52px;
+
+    max-width: 470px;
+
+    color: var(--green);
 }
 
 p {
