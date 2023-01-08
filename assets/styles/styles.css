@@ -69,7 +69,7 @@ html {
     gap: 1px;
 }
 .logo {
-    background-image: url(./icons/logo_vector.svg);
+    background-image: url(../icons/logo_vector.svg);
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
@@ -104,7 +104,7 @@ html {
 }
 
 .welcome__img {
-    background-image: url(./imgs/welcome_leafs.png);
+    background-image: url(../imgs/welcome_leafs.png);
     background-repeat: no-repeat;
     
     width: 449px;
@@ -145,7 +145,7 @@ html {
 }
 
 .about__img {
-    background-image: url(/assets/imgs/about_houseplant.jpg);
+    background-image: url(../imgs/about_houseplant.jpg);
     background-repeat: no-repeat;
 
     width: 464px;
@@ -267,7 +267,7 @@ html {
 }
 
 .prices__img {
-    background-image: url(/assets/imgs/prices_leafs.png);
+    background-image: url(../imgs/prices_leafs.png);
     background-repeat: no-repeat;
 
     width: 152px;
@@ -291,7 +291,7 @@ html {
 }
 
 .contact__img {
-    background-image: url(/assets/imgs/contact_woman.png);
+    background-image: url(../imgs/contact_woman.png);
     background-repeat: no-repeat;
     width: 400px;
     height: 497px;
