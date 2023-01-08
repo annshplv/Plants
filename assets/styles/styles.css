@@ -102,7 +102,7 @@ html {
 }
 
 .welcome__img {
-    background-image: url(/assets/imgs/welcome_leafs.jpg);
+    background-image: url(/assets/imgs/welcome_leafs.png);
 
     
     width: 449px;
@@ -202,3 +202,5 @@ html {
 
     gap: 12px;
 }
+
+/* SECTION SERVICE */
