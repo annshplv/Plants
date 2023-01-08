@@ -92,3 +92,33 @@ html {
 .menu__item:hover {
     color: var(--orange);
 }
+
+/* SECTION WELCOME */
+.welcome {
+    display: flex;
+    gap: 224px;
+
+    padding: 42px 109px;
+}
+
+.welcome__img {
+    background-image: url(/assets/imgs/welcome_leafs.jpg);
+
+    
+    width: 449px;
+    height: 407px;
+}
+
+.welcome__text {
+    display: flex;
+    flex-direction: column;
+    gap:  42px;
+
+    padding-top: 58px;
+
+    width: 549px;
+}
+
+.m-6 {
+    margin-top: 6px;
+}
