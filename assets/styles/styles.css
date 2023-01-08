@@ -203,4 +203,21 @@ html {
     gap: 12px;
 }
 
-/* SECTION SERVICE */
+/* SECTION FOOTER */
+
+.footer__box {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 40px 109px;
+}
+
+.footer-date {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
