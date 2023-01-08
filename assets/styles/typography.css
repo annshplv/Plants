@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Inika-Regular";
+    src: url(/assets/fonts/Inika/Inika-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inika-Bold";
+    src: url(/assets/fonts/Inika/Inika-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter-Regular";
+    src: url(/assets/fonts/Inter/Inter-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Inter-Bold";
+    src: url(/assets/fonts/Inter/Inter-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+.accent-green {
+    color: var(--green);
+}
+.accent-orange {
+    color: var(--orange);
+}
+
+h1 {
+    font-family: "Inter-Bold";
+    font-size: 45px;
+    line-height: 50px;
+
+    color: var(--light-gray);
+}
+
+h2 {
+    font-family: "Inika-Regular";
+    font-size: 40px;
+    line-height: 52px;
+
+    max-width: 470px;
+
+    color: var(--green);
+}
+
+h3 {
+    font-family: "Inter-Bold";
+    font-size: 40px;
+    line-height: 48px;
+
+    color: var(--black);
+}
+
+p {
+    font-family: "Inter-Regular";
+    font-size: 20px;
+    line-height: 35px;
+
+    color: var(--gray);
+}
+
+.card__title {
+    font-family: "Inter-Bold";
+    font-size: 20px;
+    line-height: 20px;
+
+    color: var(--orange);
+}
+
+.card__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+:root {
+    --green: #499A18;
+    --orange: #E06733;
+    --light-gray: #717171;
+    --gray: #636060;
+    --bg-section: #EDF2EC;
+    --links-nav: #010201;
+    --black: #000;
+    --white: #fff;
+}
+
+.btn-main {
+    width: 158px;
+    height: 44px;
+    border: 2px solid var(--orange);
+    border-radius: 10px;
+
+    font-family: "Inter-Regular", sans-serif;
+    font-weight: normal;
+    font-size: 1.6em;
+    background-color: rgba(28,28,28,0);
+    color: var(--black);
+
+    cursor: pointer;
+}
+.btn-main:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.btn {
+    width: 161px;
+    height: 50px;
+    border: 1px solid var(--orange);
+    border-radius: 5px;
+
+    font-family: "Inika-Regular";
+    font-weight: normal;
+    font-size: 2em;
+    line-height: 26px;
+    background-color: rgba(28,28,28,0);
+    color: var(--orange);
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}

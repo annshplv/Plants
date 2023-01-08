@@ -1,0 +1,352 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "IBMPlexSans", sans-serif;
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(----links-nav);
+}
+  
+ul,
+ol,
+li {
+    list-style: none;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+[class*="__container"] {
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0 109px 0;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+/* HEADER */
+.header {
+    background-color: var(--bg-section);
+}
+
+.header__box {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.menu {
+    padding: 42px 0;
+}
+
+.menu__logo {
+    display: flex;
+    align-items: center;
+
+    gap: 1px;
+}
+.logo {
+    background-image: url(/assets/icons/logo_vector.svg);
+    width: 20px;
+    height: 20px;
+}
+.logo__text {
+    font-family: "Inika-Regular";
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.menu__list {
+    display: flex;
+    justify-content: center;
+    gap: 46px;
+
+    font-family: "Inika-Regular";
+    font-size: 16px;
+    line-height: 50px;
+
+    color: var(----links-nav);
+}
+.menu__item:hover {
+    color: var(--orange);
+}
+
+/* SECTION WELCOME */
+.welcome {
+    display: flex;
+    gap: 224px;
+
+    padding: 62px 109px;
+}
+
+.welcome__img {
+    background-image: url(/assets/imgs/welcome_leafs.png);
+
+    
+    width: 449px;
+    height: 407px;
+}
+
+.welcome__text {
+    display: flex;
+    flex-direction: column;
+    gap:  42px;
+
+    padding-top: 37px;
+
+    width: 549px;
+}
+
+.m-6 {
+    margin-top: 6px;
+}
+
+/* SECTION ABOUT */
+.about__container {
+    display: flex;
+    gap: 153px;
+
+    padding: 90px 109px 98px;
+}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+
+    width: 605px;
+    height: 350px;
+
+    padding-top: 72px;
+}
+
+.about__img {
+    background-image: url(/assets/imgs/about_houseplant.jpg);
+
+    width: 464px;
+    height: 479px;
+}
+
+.about__text-discription {
+    line-height: 30px;
+}
+
+/* SECTION SERVICE */
+
+.service__container {
+    background-color: var(--bg-section);
+
+    padding: 42px 109px 120px ;
+}
+
+.service__header {
+    display: flex;
+    align-items: center;
+    gap: 142px;
+
+    width: 1007px;
+}
+
+.service__btn-list {
+    display: flex;
+    gap: 38px;
+}
+
+.service__carousel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+    column-gap: 116px;
+
+    padding-top: 79px;
+}
+
+.carousel__card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    border: 1px solid #E3E1D5;
+    border-radius: 0px 0px 20px 20px;
+
+    width: 330px;
+    height: 450px;
+}
+
+.card__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 12px;
+}
+
+/* SECTION PRICES */
+.prices {
+    display: flex;
+    gap: 438px;
+
+    padding: 40px 109px 120px;
+}
+
+.prices-check {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+
+    width: 332px;
+    height: 282px;
+
+    padding-top: 34px;
+    margin-top: 60px;
+}
+
+.check {
+    display: flex;
+    gap: 54px;
+    justify-content: center;
+    align-items: center;
+
+    width: 250px;
+    height: 50px;
+
+    background: #EDF2EC;
+    border-radius: 20px;
+
+    font-family: "Inter-Bold";
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.check-title {
+    font-family: "Inter-Bold";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+
+    color: var(--black);
+
+    width: 100px;
+}
+
+.prices h2 {
+    font-family: "Inter-Bold";
+    line-height: 50px;
+    color: var(--black);
+    text-align: right;
+}
+
+.prices__img {
+    background-image: url(/assets/imgs/prices_leafs.png);
+    width: 152px;
+    height: 172px;
+}
+.prices__help {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 38px;
+}
+
+/* SECTION CONTACT */
+
+.contact {
+    display: flex;
+    gap: 114px;
+    background-color: var(--bg-section);
+
+    padding: 54px 109px 0;
+}
+
+.contact__img {
+    background-image: url(/assets/imgs/contact_woman.png);
+    width: 400px;
+    height: 497px;
+}
+
+.contact__text {
+    display: flex;
+    gap: 62px;
+
+    margin-top: 5px;
+}
+.contact_city {
+    margin-top: 88px;
+
+    width: 450px;
+    height: 50px;
+
+    background: #D6E7D2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px;
+}
+.city {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 20px;
+
+    font-family: "Inter-Regular";
+
+    font-size: 20px;
+    line-height: 40px;
+
+    letter-spacing: 0.05em;
+
+    color: #717171;
+}
+
+/* SECTION FOOTER */
+
+.footer__box {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 46px 109px;
+}
+
+.footer-date {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-date,
+.footer-school {
+    font-family: "Inter-Regular";
+    font-size: 20px;
+    line-height: 50px;
+}
