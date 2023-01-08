@@ -70,7 +70,7 @@ p {
     --white: #fff;
 }
 
-.btn {
+.btn-main {
     width: 158px;
     height: 44px;
     border: 2px solid var(--orange);
@@ -80,14 +80,11 @@ p {
     font-weight: normal;
     font-size: 1.6em;
     background-color: rgba(28,28,28,0);
+    color: var(--black);
 
     cursor: pointer;
 }
-.btn:hover {
+.btn-main:hover {
     background-color: var(--orange);
     color: var(--white);
-}
-
-.btn-black {
-    color: var(--black);
 }
