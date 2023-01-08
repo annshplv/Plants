@@ -16,6 +16,7 @@ body {
 
 a {
     text-decoration: none;
+    color: var(----links-nav);
 }
   
 ul,
@@ -201,6 +202,78 @@ html {
     align-items: center;
 
     gap: 12px;
+}
+
+/* SECTION PRICES */
+.prices {
+    display: flex;
+    gap: 438px;
+
+    padding: 40px 109px 115px;
+}
+
+.prices-check {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+
+    width: 332px;
+    height: 282px;
+
+    padding-top: 34px;
+    margin-top: 60px;
+}
+
+.check {
+    display: flex;
+    gap: 54px;
+    justify-content: center;
+    align-items: center;
+
+    width: 250px;
+    height: 50px;
+
+    background: #EDF2EC;
+    border-radius: 20px;
+
+    font-family: "Inter-Bold";
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.check-title {
+    font-family: "Inter-Bold";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: left;
+
+    color: var(--black);
+
+    width: 100px;
+}
+
+.prices h2 {
+    font-family: "Inter-Bold";
+    line-height: 50px;
+    color: var(--black);
+    text-align: right;
+}
+
+.prices__img {
+    background-image: url(/assets/imgs/prices_leafs.png);
+    width: 152px;
+    height: 172px;
+}
+.prices__help {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 38px;
 }
 
 /* SECTION FOOTER */
