@@ -42,6 +42,14 @@ html {
     padding: 0 109px 0;
 }
 
+@media (max-width: 768px) {
+    [class*="__container"] {
+        max-width: 768px;
+        margin: 0px auto;
+        padding: 0 50px 0;
+    }
+}
+
 .main {
     flex: 1 1 auto;
 }
@@ -95,6 +103,12 @@ html {
     color: var(--orange);
 }
 
+@media (max-width: 768px) {
+    .menu {
+        padding: 35px 0;
+    }
+}
+
 /* SECTION WELCOME */
 .welcome {
     display: flex;
@@ -114,7 +128,7 @@ html {
 .welcome__text {
     display: flex;
     flex-direction: column;
-    gap:  42px;
+    gap: 42px;
 
     padding-top: 37px;
 
@@ -123,6 +137,29 @@ html {
 
 .m-6 {
     margin-top: 6px;
+}
+
+@media (max-width: 768px) {
+    .welcome {
+        gap: 42px;
+
+        padding: 40px 50px 70px;
+    }
+    .welcome__img {
+        background-size: cover;
+
+        width: 280px;
+        height: 254px;
+
+        order: 1;
+    }
+    .welcome__text {
+        gap: 30px;
+
+        padding: 0;
+
+        width: 341px;
+    }
 }
 
 /* SECTION ABOUT */
@@ -139,7 +176,7 @@ html {
     gap: 38px;
 
     width: 605px;
-    height: 350px;
+    max-height: 350px;
 
     padding-top: 72px;
 }
@@ -154,6 +191,32 @@ html {
 
 .about__text-discription {
     line-height: 30px;
+}
+
+@media (max-width: 768px) {
+    .about__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 65px;
+    
+        padding: 40px 50px 95px;
+    }
+    .about__text {
+        align-items: center;
+        padding-top: 0;
+        gap: 48px;
+
+        width: 668px;
+    }
+    .about__img {
+        background-size: cover;
+
+        width: 250px;
+        height: 258px;
+    }
+    .about__text-discription {
+        font-size: 20px;
+    }
 }
 
 /* SECTION SERVICE */
@@ -194,8 +257,8 @@ html {
     border: 1px solid #E3E1D5;
     border-radius: 0px 0px 20px 20px;
 
-    width: 330px;
-    height: 450px;
+    max-width: 330px;
+    max-height: 450px;
 }
 
 .card__text {
@@ -204,6 +267,39 @@ html {
     align-items: center;
 
     gap: 12px;
+}
+
+@media (max-width: 768px) {
+    .service__container {
+        padding: 60px 50px 70px;
+    }
+    .service__header {
+        flex-direction: column;
+        align-items:flex-start;
+        gap: 40px;
+    }
+    .service__carousel {
+        gap: 38px;
+        column-gap: 106px;
+
+        padding-top: 40px;
+    }
+    .carousel__card {
+        max-width: 281px;
+    }
+    .carousel__card > img {
+        width: 280px;
+        height: 350px;
+    }
+    .service__title {
+        max-width: 306px;
+        text-align: left;
+    }
+    .card__subtitle {
+        width: 203px;
+        text-align: center;
+        padding-bottom: 16px;
+    }
 }
 
 /* SECTION PRICES */
@@ -259,7 +355,7 @@ html {
     width: 100px;
 }
 
-.prices h2 {
+.prices__title {
     font-family: "Inter-Bold";
     line-height: 50px;
     color: var(--black);
@@ -280,6 +376,22 @@ html {
     gap: 38px;
 }
 
+@media (max-width: 768px) {
+    .prices {
+        gap: 40px;
+
+        padding: 40px 50px 95px;
+    }
+    .prices__help {
+        gap: 28px;
+        padding-top: 103px;
+    }
+    .prices__title {
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+
 /* SECTION CONTACT */
 
 .contact {
@@ -292,7 +404,8 @@ html {
 
 .contact__img {
     background-image: url(../imgs/contact_woman.png);
-    background-repeat: no-repeat;
+    
+    background-size: cover;
     width: 400px;
     height: 497px;
 }
@@ -330,6 +443,30 @@ html {
     color: #717171;
 }
 
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 250px;
+
+        padding: 40px 50px 0;
+    }
+    .contact__img {
+        width: 200px;
+        height: 250px;
+
+        order: 1;
+        background-size: cover;
+    }
+    .contact__text {
+        flex-direction: column;
+        align-items: center;
+
+        gap: 15px;
+    }
+}
+
 /* SECTION FOOTER */
 
 .footer__box {
@@ -337,6 +474,9 @@ html {
     justify-content: space-between;
 
     padding: 46px 109px;
+
+    font-size: 20px;
+    line-height: 50px;
 }
 
 .footer-date {
@@ -354,4 +494,21 @@ html {
     font-family: "Inter-Regular";
     font-size: 20px;
     line-height: 50px;
+}
+
+@media (max-width: 768px) {
+    .footer__box {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+
+        padding: 31px 50px;
+    }
+    .footer__text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .footer-social {
+        padding-top: 10px;
+    }
 }

@@ -41,6 +41,10 @@ h1 {
     color: var(--light-gray);
 }
 
+@media (max-width: 768px) {
+    h1 {font-size: 35px;}
+}
+
 h2 {
     font-family: "Inika-Regular";
     font-size: 40px;
@@ -49,6 +53,15 @@ h2 {
     max-width: 470px;
 
     color: var(--green);
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 35px;
+        line-height: 46px;
+
+        text-align: center;
+    }
 }
 
 h3 {
@@ -65,6 +78,13 @@ p {
     line-height: 35px;
 
     color: var(--gray);
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 16px;
+        line-height: 25px;
+    }
 }
 
 .card__title {
