@@ -100,7 +100,7 @@ html {
 .menu__list {
     display: flex;
     justify-content: center;
-    gap: 46px;
+    gap: 48px;
 
     font-family: "Inika-Regular";
     font-size: 16px;
@@ -117,6 +117,12 @@ html {
         padding: 35px 0;
     }
 }
+
+@media (max-width: 380px) {
+    .header__box {
+        padding-top: 16px;
+    }
+} 
 
 /* BURGER MENU */
 
@@ -208,6 +214,7 @@ html {
 .welcome__img {
     background-image: url(../imgs/welcome_leafs.png);
     background-repeat: no-repeat;
+    background-size: cover;
     
     width: 449px;
     height: 407px;
@@ -231,11 +238,9 @@ html {
     .welcome {
         gap: 42px;
 
-        padding: 40px 50px 70px;
+        padding: 38px 50px 69px;
     }
     .welcome__img {
-        background-size: cover;
-
         width: 280px;
         height: 254px;
 
@@ -256,9 +261,10 @@ html {
       display: none;
     }
     .welcome {
-        gap: 20px;
-
-        padding: 24px 25px;
+        padding: 34px 25px 22px;
+    }
+    .welcome__text {
+        gap: 22px;
     }
   }
 
@@ -284,6 +290,7 @@ html {
 .about__img {
     background-image: url(../imgs/about_houseplant.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 
     width: 464px;
     height: 479px;
@@ -297,20 +304,18 @@ html {
     .about__container {
         flex-direction: column;
         align-items: center;
-        gap: 65px;
+        gap: 68px;
     
         padding: 40px 50px 95px;
     }
     .about__text {
         align-items: center;
         padding-top: 0;
-        gap: 48px;
+        gap: 50px;
 
         width: 668px;
     }
     .about__img {
-        background-size: cover;
-
         width: 250px;
         height: 258px;
     }
@@ -322,17 +327,15 @@ html {
 @media (max-width: 380px) {
     .about__container {
         gap: 0;
-        padding: 30px 25px 31px;
+        padding: 30px 25px 33px;
     }
     .about__text {
-        gap: 22px;
+        gap: 14px;
 
         max-width: 330px;
         min-height: 228px;
     }
     .about__img {
-        background-size: cover;
-
         width: 150px;
         height: 147px;
     }
@@ -353,11 +356,11 @@ html {
 .service__header {
     display: flex;
     align-items: center;
-    gap: 142px;
-
-    width: 1007px;
+    gap: 140px;
 }
-
+.service__title {
+    max-width: 306px;
+}
 .service__btn-list {
     display: flex;
     flex-wrap: wrap;
@@ -392,6 +395,9 @@ html {
 
     gap: 12px;
 }
+.service__btn-list {
+    max-width: 559px;
+}
 
 @media (max-width: 768px) {
     .service__container {
@@ -400,7 +406,7 @@ html {
     .service__header {
         flex-direction: column;
         align-items:flex-start;
-        gap: 40px;
+        gap: 42px;
     }
     .service__carousel {
         gap: 38px;
@@ -425,7 +431,8 @@ html {
         padding-bottom: 16px;
     }
     .service__carousel {
-        gap: 34px;
+        gap: 38px;
+        column-gap: 106px;
     }
 }
 
@@ -434,7 +441,7 @@ html {
         padding: 30px 25px 27px;
     }
     .service__header {
-        gap: 35px;
+        gap: 38px;
     }
     .service__title {
         max-width: 187px;
@@ -445,6 +452,7 @@ html {
     }
     .service__carousel {
         justify-content: center;
+        gap: 34px;
     }
 }
 
@@ -511,6 +519,7 @@ html {
 .prices__img {
     background-image: url(../imgs/prices_leafs.png);
     background-repeat: no-repeat;
+    background-size: cover;
 
     width: 152px;
     height: 172px;
@@ -526,37 +535,54 @@ html {
     .prices {
         gap: 40px;
 
-        padding: 40px 50px 95px;
+        padding: 40px 50px 97px;
     }
     .prices__help {
         gap: 28px;
-        padding-top: 103px;
+        padding-top: 100px;
     }
     .prices__title {
         font-size: 25px;
         line-height: 35px;
     }
+    h3 {
+        margin-left: 15px;
+    }
+    .prices-check {
+        margin-top: 56px;
+    }
 }
 
 @media (max-width: 380px) {
+    h3 {
+        margin-left: 0;
+    }
     .prices {
         flex-direction: column;
         justify-content: center;
         gap: 19px;
     
-        padding: 25px 25px 40px;
+        padding: 25px 75px 41px;
+    }
+    .prices__price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
     }
     .prices-check {
         width: 224px;
         height: 235px;
+        gap: 14px;
 
-        margin-top: 40px;
+        margin-top: 33px;
     }
     .check {
         width: 180px;
         height: 50px;
 
-        gap: 30px;
+        gap: 0;
+        margin-bottom: -5px;
     }
     .check-title {
         font-size: 15px;
@@ -566,10 +592,12 @@ html {
         justify-content: center;
         align-items: center;
         padding-top: 0;
-        gap: 14px;
+        gap: 19px;
     }
     .prices__title {
         text-align: center;
+        font-size: 20px;
+        line-height: 35px;
     }
     .prices__img {
         display: none;
@@ -588,8 +616,9 @@ html {
 
 .contact__img {
     background-image: url(../imgs/contact_woman.png);
-    
+    background-repeat: no-repeat;
     background-size: cover;
+
     width: 400px;
     height: 497px;
 }
@@ -614,6 +643,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 360px;
 
     padding: 10px 20px;
 
@@ -625,6 +655,8 @@ html {
     letter-spacing: 0.05em;
 
     color: #717171;
+
+    max-width: 450px;
 }
 
 @media (max-width: 768px) {
@@ -634,20 +666,23 @@ html {
         justify-content: center;
         gap: 250px;
 
-        padding: 40px 50px 0;
+        padding: 38px 50px 0;
     }
     .contact__img {
         width: 200px;
         height: 250px;
+        margin-left: 20px;
 
         order: 1;
-        background-size: cover;
     }
     .contact__text {
         flex-direction: column;
         align-items: center;
 
         gap: 15px;
+    }
+    .contact_city {
+        margin-top: 91px;
     }
 }
 
@@ -668,6 +703,12 @@ html {
     .contact__img {
         width: 100px;
         height: 125px;
+
+        margin-left: 0;
+    }
+    .contact__text {
+        gap: 0px;
+        margin-top: 0px;
     }
 }
 
@@ -706,7 +747,7 @@ html {
         align-items: center;
         gap: 15px;
 
-        padding: 31px 50px;
+        padding: 32px 0 0;
     }
     .footer__text {
         font-size: 20px;
@@ -714,5 +755,15 @@ html {
     }
     .footer-social {
         padding-top: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+    .footer__box {
+        padding: 23px 0 0;
+        gap: 14px;
+    }
+    .footer-social {
+        padding-top: 0px;
     }
 }
