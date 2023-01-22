@@ -50,6 +50,14 @@ html {
     }
 }
 
+@media (max-width: 380px) {
+    [class*="__container"] {
+        max-width: 380px;
+        margin: 0px auto;
+        padding: 0 25px 0;
+    }
+}
+
 .main {
     flex: 1 1 auto;
 }
@@ -62,6 +70,7 @@ html {
 .header__box {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     justify-content: space-between;
 }
@@ -106,6 +115,85 @@ html {
 @media (max-width: 768px) {
     .menu {
         padding: 35px 0;
+    }
+}
+
+/* BURGER MENU */
+
+.menu-btn,
+.burger-menu {
+    display: none;
+}
+
+.menu-btn {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+    /* overflow: hidden; */
+}
+
+.btn-line {
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--orange);
+    transition: all 0,5s;
+}
+.burger-menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.burger-menu__item {
+    font-family: "Inter-Regular";
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+.burger-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 60%;
+	height: 65%;
+	padding: 45px;
+    background: var(--bg-section);
+	transform: translateX(-100%);
+	transition: transform 0.5s; 
+}
+.burger-menu.active {
+	transform: translateX(0);
+}
+
+.menu-btn.active span:nth-of-type(1) {
+    display: none;
+}
+.menu-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);  
+}
+.menu-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg); 
+}
+
+@media (max-width: 380px) {
+    .burger-menu {
+        display: block;
+    }
+    .menu-btn {
+        display: block;
     }
 }
 
@@ -161,6 +249,18 @@ html {
         width: 341px;
     }
 }
+
+@media (max-width: 380px) {
+    .menu__list,
+    .welcome__img {
+      display: none;
+    }
+    .welcome {
+        gap: 20px;
+
+        padding: 24px 25px;
+    }
+  }
 
 /* SECTION ABOUT */
 .about__container {
@@ -219,6 +319,29 @@ html {
     }
 }
 
+@media (max-width: 380px) {
+    .about__container {
+        gap: 0;
+        padding: 30px 25px 31px;
+    }
+    .about__text {
+        gap: 22px;
+
+        max-width: 330px;
+        min-height: 228px;
+    }
+    .about__img {
+        background-size: cover;
+
+        width: 150px;
+        height: 147px;
+    }
+    .about__text-discription {
+        font-size: 15px;
+        line-height: 25px;
+    }
+  }
+
 /* SECTION SERVICE */
 
 .service__container {
@@ -237,6 +360,7 @@ html {
 
 .service__btn-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 38px;
 }
 
@@ -299,6 +423,28 @@ html {
         width: 203px;
         text-align: center;
         padding-bottom: 16px;
+    }
+    .service__carousel {
+        gap: 34px;
+    }
+}
+
+@media (max-width: 380px) {
+    .service__container {
+        padding: 30px 25px 27px;
+    }
+    .service__header {
+        gap: 35px;
+    }
+    .service__title {
+        max-width: 187px;
+    }
+    .service__btn-list {
+        gap: 10px;
+        width: 252px;
+    }
+    .service__carousel {
+        justify-content: center;
     }
 }
 
@@ -392,6 +538,44 @@ html {
     }
 }
 
+@media (max-width: 380px) {
+    .prices {
+        flex-direction: column;
+        justify-content: center;
+        gap: 19px;
+    
+        padding: 25px 25px 40px;
+    }
+    .prices-check {
+        width: 224px;
+        height: 235px;
+
+        margin-top: 40px;
+    }
+    .check {
+        width: 180px;
+        height: 50px;
+
+        gap: 30px;
+    }
+    .check-title {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .prices__help {
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+        gap: 14px;
+    }
+    .prices__title {
+        text-align: center;
+    }
+    .prices__img {
+        display: none;
+    }
+}
+
 /* SECTION CONTACT */
 
 .contact {
@@ -419,8 +603,8 @@ html {
 .contact_city {
     margin-top: 88px;
 
-    width: 450px;
-    height: 50px;
+    max-width: 450px;
+    max-height: 50px;
 
     background: #D6E7D2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -464,6 +648,26 @@ html {
         align-items: center;
 
         gap: 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    .contact {
+        gap: 132px;
+
+        padding: 25px 42px 0;
+    }
+    .contact_city  {
+        width: 300px;
+        height: 50px;
+
+        gap: 150px;
+
+        margin: 80px 0 0 0;
+    }
+    .contact__img {
+        width: 100px;
+        height: 125px;
     }
 }
 

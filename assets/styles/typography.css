@@ -44,6 +44,12 @@ h1 {
 @media (max-width: 768px) {
     h1 {font-size: 35px;}
 }
+@media (max-width: 380px) {
+    h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
 
 h2 {
     font-family: "Inika-Regular";
@@ -64,12 +70,34 @@ h2 {
     }
 }
 
+@media (max-width: 380px) {
+    h2 {
+        font-size: 25px;
+        line-height: 33px;
+    }
+}
+
 h3 {
     font-family: "Inter-Bold";
     font-size: 40px;
     line-height: 48px;
 
     color: var(--black);
+}
+
+@media (max-width: 768px) {
+    h3 {
+        font-size: 35px;
+        line-height: 43px;
+    }
+}
+
+@media (max-width: 380px) {
+    h3 {
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+    }
 }
 
 p {
@@ -149,4 +177,20 @@ p {
 .btn:hover {
     background-color: var(--orange);
     color: var(--white);
+}
+
+@media (max-width: 380px) {
+    .btn {
+        width: 100px;
+        height: 34px;
+    }
+    .btn-main {
+        font-size: 1em;
+
+        width: 120px;
+        height: 35px;
+    }
+    .btn {
+        font-size: 1.5em;
+    }
 }
